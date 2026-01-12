@@ -28,6 +28,7 @@ const Footer: React.FC = () => {
       <div className="mt-16 md:mt-20 pt-8 border-t border-[#D1CEC7]/10 flex flex-col md:flex-row justify-between opacity-30 text-[8px] md:text-[9px] uppercase tracking-[0.2em] space-y-4 md:space-y-0 text-center md:text-left">
         <p>&copy; 2024 Atelier Minimalist</p>
         <p>Quiet & Timeless</p>
+        <p>by Amro Studio</p>
       </div>
     </footer>
   );
