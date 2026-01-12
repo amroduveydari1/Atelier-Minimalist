@@ -1,0 +1,31 @@
+import React from 'react';
+
+interface LogoProps {
+  className?: string;
+  color?: string;
+}
+
+const Logo: React.FC<LogoProps> = ({ className = 'w-8 h-8', color = 'currentColor' }) => {
+  return (
+    <svg 
+      viewBox="0 0 120 120" 
+      fill="none" 
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      style={{ color }}
+    >
+      {/* Outer frame */}
+      <rect x="15" y="15" width="90" height="90" stroke="currentColor" strokeWidth="0.5" fill="none"/>
+      
+      {/* Inner geometric pattern - minimalist A */}
+      <path d="M 40 80 L 60 35 L 80 80" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="square"/>
+      <line x1="48" y1="65" x2="72" y2="65" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square"/>
+      
+      {/* Subtle accent line */}
+      <line x1="30" y1="60" x2="35" y2="60" stroke="currentColor" strokeWidth="0.5"/>
+      <line x1="85" y1="60" x2="90" y2="60" stroke="currentColor" strokeWidth="0.5"/>
+    </svg>
+  );
+};
+
+export default Logo;

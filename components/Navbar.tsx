@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import Logo from './Logo';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -43,6 +44,7 @@ const Navbar: React.FC = () => {
         }`}
       >
         <Link to="/" className="group flex items-center space-x-3 z-[110]">
+          <Logo className="w-7 h-7 md:w-8 md:h-8 text-white opacity-90 group-hover:opacity-100 transition-opacity duration-500" />
           <div className="hidden sm:block w-8 h-[1px] bg-white scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500" />
           <h1 className="text-sm md:text-base tracking-[0.25em] md:tracking-[0.3em] font-medium uppercase">
             Atelier <span className="font-serif italic lowercase tracking-normal text-lg md:text-xl">Minimalist</span>
