@@ -1,18 +1,27 @@
-AMRO STUDIO — Atelier-Minimalist
-A minimal interior architecture website exploring silence, material honesty, and digital space as a frame for living.
+# Atelier Minimalist
 
+A minimalist interior architecture portfolio focused on projects, materials, and editorial storytelling.
 
+**Live preview:** https://atelier-minimalist.vercel.app
 
-Atelier-Minimalist — a quiet architectural website by AMRO STUDIO, built with restraint and intention.
+## Features
+- Architectural project archive and individual project pages
+- Studio information, journal, and contact pages
+- Client-side navigation and subtle motion
 
+## Built with
+React, TypeScript, Vite, React Router, and Framer Motion.
 
+## Run locally
+```bash
+npm ci
+npm run dev
+```
 
-A digital archive for an atelier-minimalist interior architecture practice, where light, material, and structure define experience.
+## Structure
+`App.tsx` defines the routes; `pages/` contains the main views and `components/` contains shared UI.
 
+## Status
+A front-end portfolio and design exploration. The code and deployed preview have not been independently tested for production readiness.
 
-
-Source code for Atelier-Minimalist — an interior architecture website by AMRO STUDIO, treating the web as architectural space.
-
-
-
-Atelier-Minimalist — interior architecture expressed through digital space.
+Built by [Amro Duveydari](https://github.com/amroduveydari1).
